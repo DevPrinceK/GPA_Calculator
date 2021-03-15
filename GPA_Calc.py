@@ -42,9 +42,11 @@ def calculate():
     grades = []
     gpt = []
     try:
+        # Stores all 'credit' entries into a list
         entries_credits = [ent_c1_2.get(), ent_c2_2.get(), ent_c3_2.get(), 
         ent_c4_2.get(), ent_c5_2.get(), ent_c6_2.get()]
-
+        
+        # Stores all 'grade' entries into a list
         entries_grades = [ent_c1_3.get(), ent_c2_3.get(), ent_c3_3.get(), 
         ent_c4_3.get(), ent_c5_3.get(), ent_c6_3.get()]
 
@@ -52,7 +54,7 @@ def calculate():
             #Takes all the credits into one list
             ent = entries_credits[i]
             credit_per_hour.append(int(ent))
-            #Takes all the scores into one list
+            #Takes all the graddes into one list
             grade = entries_grades[i]
             grades.append(grade)
 
